@@ -151,7 +151,7 @@ public class ParquetMetadataConverter {
           columnMetaData.getTotalUncompressedSize(),
           columnMetaData.getTotalSize(),
           columnMetaData.getFirstDataPageOffset());
-      columnChunk.meta_data.dictionary_page_offset = columnMetaData.getDictionaryPageOffset();
+      columnChunk.getMeta_data().setDictionary_page_offset(columnMetaData.getDictionaryPageOffset());
 //      columnChunk.meta_data.index_page_offset = ;
 //      columnChunk.meta_data.key_value_metadata = ; // nothing yet
 
